@@ -157,8 +157,14 @@ console.log(isEqual("hello", "Hello"));
 */
 
 function notEqual (first, second){
-	
+	if (first !== second){
+		return "Opposites do attract.";
+	} else {
+		return "Cuz it's like you're my mirror";
+	}
 }
+
+console.log(notEqual("hI","hi"));
 
 /*
  * #8
@@ -172,7 +178,15 @@ function notEqual (first, second){
  * Console.log your result.
 */ 
 
+function spareChange (money){
+	if(money>100){
+		return true;
+	}else {
+		return false;
+	}
+}
 
+console.log(spareChange(99));
 
 /*
  * #9
@@ -188,7 +202,15 @@ function notEqual (first, second){
  * Console.log your result.
 */ 
 
+function dirty30 (one, two, three){
+	if ((one + two + three) > 30){
+		return true;
+	}else{
+		return false;
+	}
+}
 
+console.log(dirty30(10,15,6));
 
 /*
  * #10
