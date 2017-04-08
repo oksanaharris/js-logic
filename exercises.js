@@ -224,8 +224,15 @@ console.log(dirty30(10,15,6));
  * Console.log your result.
 */ 
 
+function evenStevens (num){
+	if (num%2===0){
+		return true;
+	}else{
+		return false;
+	}
+}
 
-
+console.log("Even integer: " + evenStevens(17));
 
 /*
  * #11
@@ -240,6 +247,15 @@ console.log(dirty30(10,15,6));
  * Console.log your result.
 */ 
 
+function daClurb(cover, age){
+	if(age >=21 && cover >=21){
+		return "Welcome to the Legends Lounge.";
+	}else{
+		return "Chuck E Cheese is across the street.";
+	}
+}
+
+console.log (daClurb(20,20));
 
 /*
  * #12
