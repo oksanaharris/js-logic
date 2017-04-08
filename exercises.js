@@ -29,6 +29,13 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * The function will return true if the number passed into the function is equal to or greater than Hawaii's voting age. Console.log your result.
 */
 
+function canVote(age) {
+	if (age >=18){
+		return true;
+	}
+}
+
+console.log(canVote(17));
 
 /*
  * #2
@@ -42,6 +49,13 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */
 
+function login(password){
+	if (password === "test1234"){
+		return "Login Success!";
+	}
+}
+
+console.log("Login: " + login("test1235"));
 
 /*
  * #3
@@ -56,7 +70,13 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */
 
+function isGreaterThan (first,second){
+	if (first > second){
+		return true;
+	}
+}
 
+console.log(isGreaterThan(3,2));
 
 /*
  * #4
@@ -70,7 +90,13 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */
 
+function mustBeTrue (boo){
+	if (boo === true){
+		return true;
+	}
+}
 
+console.log("Must be true... " + mustBeTrue(3/3 === 1));
 
 /*
  * #5
@@ -84,7 +110,15 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */
 
+function bigBird (word){
+	if (word.length === 3) {
+		return "Word to Big Bird!";
+	} else {
+		return "Didn't work";
+	}
+}
 
+console.log(bigBird("No"));
 
 /*
  * #6
@@ -99,6 +133,15 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */
 
+function isEqual(first, second){
+	if (first === second) {
+		return "You look mahvelous!"
+	} else {
+		return "I don't know who you are anymore."
+	}
+}
+
+console.log(isEqual("hello", "Hello"));
 
 /*
  * #7
@@ -113,6 +156,9 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */
 
+function notEqual (first, second){
+	
+}
 
 /*
  * #8
