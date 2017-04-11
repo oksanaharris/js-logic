@@ -360,10 +360,10 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 5"
 */
 
-var player = [1, 2, 3, 4, 5];
+var players = ["PLayer: 1", "PLayer: 2","Player: 3","Player: 4","Player: 5"];
 
-for (var i = 0; i<player.length; i++){
-	console.log("Player: " + player[i]);
+for (var i = 0; i<players.length; i++){
+	console.log(players[i]);
 }
 
 
@@ -392,7 +392,17 @@ for (var i = 0; i<myFavFoods.length; i++){
  * Console.log your result.
 */
 
+var numArray = [5, 7, 6, 8, 10];
+var total = 0;
 
+function sumItUp (arr) {
+	for (var i = 0; i<arr.length; i++){
+		total = total + arr[i];
+	}
+	return total;
+}
+
+console.log(sumItUp(numArray));
 
 /*
  * #18
@@ -406,6 +416,21 @@ for (var i = 0; i<myFavFoods.length; i++){
  * Console.log both the east and west arrays.
 */ 
 
+function allStars (ballers) {
+	var eastEven = [];
+	var westOdd = [];
+	for (var i=0;i<ballers.length;i++){
+		if (i%2===0) {
+			westOdd.push(ballers[i]);
+		} else {
+			eastEven.push(ballers[i]);
+		}
+	}
+	return 'Odd players: ' + westOdd + '. Even players: ' + eastEven;
+}
+
+console.log(allStars(players));
+
 /*
  * #19
  * Function - subways
@@ -418,8 +443,29 @@ for (var i = 0; i<myFavFoods.length; i++){
  * Console.log your results.
 */ 
 
-  var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
+var subOfTheDay = ["Teriyaki Chicken-0", "Spicy Italian-1", "Turkey-2", "BMT-3", "Black Forest Ham-4", "Meatball Marinara-5", "Veggie-6"];
 
+function subways (special) {
+	for (var i = 0; i< special.length; i++){
+		if (i%2 !== 0){
+			special.splice(i,1,"Classic Tuna");
+		}
+	}
+	return special;
+}
+
+console.log(subways(subOfTheDay));
+
+function subways2(special) {
+	for (var i = 0; i<special.length; i++){
+		if(i%2 !== 0){
+			special[i] = "Classic Tuna";
+		}
+	}
+	return special;
+}
+
+console.log(subways2(subOfTheDay));
 
 /*
 Final Boss
