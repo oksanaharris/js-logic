@@ -293,6 +293,17 @@ console.log(graduation(119, true));
  * Console.log your result.
 */ 
 
+function moneyTrain (speed){
+	if (speed < 50){
+		return "You are riding Honolulu's Rail.";
+	} else if (speed >= 100){
+		return "Now you ballin' in the Shinkansen!";
+	} else {
+		return "You are riding an Amtrak.";
+	}
+}
+
+console.log(moneyTrain(67));
 
 /*
  * #14
@@ -308,14 +319,24 @@ console.log(graduation(119, true));
  * Console.log budget and doughnutBought again.
 */ 
 
+var budget = 25;	
+var doughnutPrice = 3;
+var doughnutBought = 0;
 
+function buyDoughnut () {
+	budget = budget - doughnutPrice;
+	doughnutBought ++;
+	return 'Doughnuts bought: ' + doughnutBought + '. Money left: ' + budget;
+}
 
+console.log(buyDoughnut());
+console.log(buyDoughnut());
 
 
 /*
 For loops - A for loop checks a condition a specific number of times and allows us to execute a code block and evaluate a condition to determine if our loop should run again.
 
-The for loop is made up for 3 parts:
+The for loop is made up of 3 parts:
 
 1) Initialization (i.e. var i = 0;)
 2) Condition (i.e. i<arr.length;)
@@ -339,6 +360,12 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 5"
 */
 
+var player = [1, 2, 3, 4, 5];
+
+for (var i = 0; i<player.length; i++){
+	console.log("Player: " + player[i]);
+}
+
 
 /* 
  * #16
@@ -346,6 +373,9 @@ for (var i = 0; i<toyotaModels.length; i++){
 */
   var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
 
+for (var i = 0; i<myFavFoods.length; i++){
+	console.log(myFavFoods[i]);
+}
 
 /*
  * #17
